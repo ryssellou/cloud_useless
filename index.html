@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Cloud Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Useless Cloud Button</h1>
+        <p>Click one of the buttons to "do something amazing" with the cloud!</p>
+        
+        <button id="cloudButton" onclick="connectToCloud()">Connect to Cloud</button>
+        <button id="enhanceButton" onclick="enhanceCloud()">Enhance Cloud Power</button>
+        <button id="rainButton" onclick="summonCloudRain()">Summon Cloud Rain</button>
+        
+        <div id="loading" class="loading hidden">Connecting to Cloud...</div>
+        <div id="result" class="hidden">Cloud Connected! But nothing happened.</div>
+        <div id="cloudPower" class="hidden">Cloud Power: <span id="powerMeter">0%</span></div>
+        
+        <audio id="soundEffect" src="" hidden></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
